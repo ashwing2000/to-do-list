@@ -1,0 +1,146 @@
+*{
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body{
+        background: #f5f5f5;
+      
+    }
+    .todo-list{
+        width: 450px;
+        padding: 20px;
+        box-shadow: 0 10px 40px rgba(0,0,0, 0.1);
+        border-radius: 5px;
+    }
+    .list-head{
+        display: flex;
+        grid-template-columns: 5fr 1fr;
+        gap: 25px;
+
+    }
+    .add-list{
+        background-color: rgb(143, 75, 221);
+        outline: none;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        font: 16px;
+        width:80px;
+        height:45px;
+        color: #fff;
+    }
+    .add-list:hover{
+        background-color:rgb(143, 75, 221,0.7) ;
+    }
+    .entered-list{
+        border-radius: 5px;
+        padding: 10px;  
+        border: 1px soild #ccc;
+        outline: none;
+        font: 16px;
+        
+    }
+    .entered-list:focus{
+        box-shadow: 0 0 5px rgb(0,0,0, 0.1);
+    }
+    .fa-clipboard-check{
+        color: rgb(143, 75, 221);
+        padding: 0 10px ;
+
+    }
+    .container{
+        width: 95%;
+        margin: auto;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap ;
+        margin: 25px 0; 
+        width: 100%;
+        box-shadow: 0 0 5px rgb(0,0,0, 0.1);
+        background: #f5f5f5;
+
+    }
+     h2{
+        font-size: 2rem;
+        font-weight:800; 
+    }
+    .user-input{
+        width: 450px;
+        text-align: center ;
+    }
+    .to-do-items{
+        width: 500px;
+        margin: auto;
+    }
+    .items{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        border-radius: 2px;
+        padding: 16px;
+        color: black;
+        margin-top: 10px;
+        font-size: 1rem;
+        text-transform: uppercase;
+        background-color: white;
+        border: 1px solid lightgray;
+        text-transform: uppercase;
+        -webkit-transition: all 0.30s ease-in-out;
+        -moz-transition: all 0.30s ease-in-out;
+        -ms-transition: all 0.30s ease-in-out;
+        -o-transition: all 0.30s ease-in-out;
+        transition: all 0.30s ease-in-out;
+    }
+    .items:hover{
+        box-shadow: 0 0 20px  rgb(0,0,0, 0.1) ;
+        
+    }
+    .items i{
+        cursor: pointer;
+        margin: 0 5px; 
+    }
+    @media(max-width:768px){
+        .nav{
+        align-items:center;
+        flex-direction: column;
+
+        }
+        .to-do-items{
+            width: 100%;
+        }
+        .entered-list{
+            width: 100%;
+        }
+       
+    } 
+    @media (max-width:480px) {
+       .entered-list{
+        width: 74%;
+       } 
+       .to-do-list{
+        width: 300px;
+    }
+    .user-input{
+        text-align: center;
+    }
+    }
+    @media (min-width:768px) and (max-width:991px){
+        .entered-list{
+            width: 300px;
+        }
+    }
+   
+    @media (max-width:320px) {
+        .entered-list{
+            width:60%;
+        }
+        .nav{
+            text-align: center;
+           }
+    }
+
