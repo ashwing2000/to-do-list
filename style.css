@@ -144,3 +144,11 @@
            }
     }
 
+    @media (min-width:300px) and (max-width:767px){
+    .fa-clipboard-check{
+       padding-left: 25px;
+    }
+    h2{
+        padding-left: 40px;
+    }
+}

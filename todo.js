@@ -56,14 +56,3 @@ function createElement() {
     if (index > colors1.length - 1 && index > colors2.length - 1) index = 0;
 
 }
-
-// function addAfterClick() {
-//     if (inputValue() > 0 && userInput.value.trim().length > 0) {
-//         createElement();
-//     }
-// }
-// function addAfterKeypress(e) {
-//     if (inputValue() > 0 && userInput.value.trim().length > 0 && e.keyCode === 13) {
-//         createElement();
-//     }
-// }
